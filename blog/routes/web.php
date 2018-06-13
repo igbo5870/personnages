@@ -11,10 +11,22 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/liste-personnes', function () {
-    return view('list');
+Route::get('/', 'listController@getData');
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/home', 'listController@getData');
+
+Route::get('/view', function () {
+    return view('view');
 });

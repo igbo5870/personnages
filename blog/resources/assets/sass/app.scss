@@ -8,7 +8,70 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.header-top{
+  background-color: #c30044;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-top p{
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.header-bottom{
+  background-color: #31322f;
+  color: #fff;
+
+}
+
+.header-bottom p{
+ font-size: 1.6em; 
+} 
+
+.header-bottom a{
+  color: #31322f;
+}
+
+footer{
+  color: #fff;
+  background-color: #31322f;
+  ul{
+    list-style: none;
+  }
+}
+
+footer a{
+  text-decoration: underline;
+  color: #fff;
+}
+footer ul{
+  margin: 0;
+}
+footer a:hover{
+  color: #808080;
+}
+
+.card-name{
+  border: 1px solid #000;
+}
+
+.card-name .btn{
+  border-radius: 0px;
+}
+
+.btn-secondary{
+  border: 0;
 }
